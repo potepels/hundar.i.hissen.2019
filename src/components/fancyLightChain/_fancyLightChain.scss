@@ -44,6 +44,9 @@
     box-shadow: 0 0 0.3em 0.4em rgba(#fff, 0.55);
     content: "";
   }
+  &--blinking {
+    animation: flash 3.5s ease-out infinite;
+  }
   &--pink {
     background-color: rgba($pink, 0.8);
     box-shadow: 0 0 2em 0.8em rgba($pink, 0.55);
@@ -53,15 +56,39 @@
     background-color: rgba($blue, 0.8);
     box-shadow: 0 0 2em 0.8em rgba($blue, 0.55);
     border-color: darken($blue, 3%);
+    animation-delay: 2s;
   }
   &--green {
     background-color: rgba($lightgreen, 0.8);
     box-shadow: 0 0 2em 0.8em rgba($lightgreen, 0.55);
     border-color: darken($lightgreen, 3%);
+    animation-delay: 2.5s;
   }
   &--red {
     background-color: rgba($red, 0.8);
     box-shadow: 0 0 2em 0.8em rgba($red, 0.55);
     border-color: darken($red, 3%);
+    animation-delay: 1s;
+  }
+}
+
+@keyframes flash {
+  0%,
+  19.999%,
+  22%,
+  62.999%,
+  64%,
+  64.999%,
+  70%,
+  100% {
+    opacity: 0.99;
+  }
+  20%,
+  21.999%,
+  63%,
+  63.999%,
+  65%,
+  69.999% {
+    opacity: 0.4;
   }
 }

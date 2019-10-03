@@ -1,0 +1,22 @@
+[
+    {
+        "floor": 1,
+        "name": "Kaja",
+        "image": "kaja.png"
+    },
+    {
+        "floor": 2,
+        "name": "Miff",
+        "image": "miff1.png"
+    },
+    {
+        "floor": 3,
+        "name": "Jolteon",
+        "image": "jolty.png"
+    },
+    {
+        "floor": 4,
+        "name": "Shibbe",
+        "image": "day2.png"
+    }
+]
