@@ -12,7 +12,8 @@ class FancyLightChain extends Component {
     }
 
     renderChain() {
-        const FancyLightsInChain = this.props.lights.map((item) => <FancyLight
+        const FancyLightsInChain = this.props.lights.map((item, index) => <FancyLight
+            key={index}
             color={item.color}
             blinking={item.blinking}
         />

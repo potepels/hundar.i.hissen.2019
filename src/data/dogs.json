@@ -18,5 +18,105 @@
         "floor": 4,
         "name": "Shibbe",
         "image": "day2.png"
+    },
+    {
+        "floor": 5,
+        "name": "Kaja",
+        "image": "kaja.png"
+    },
+    {
+        "floor": 6,
+        "name": "Miff",
+        "image": "miff1.png"
+    },
+    {
+        "floor": 7,
+        "name": "Jolteon",
+        "image": "jolty.png"
+    },
+    {
+        "floor": 8,
+        "name": "Shibbe",
+        "image": "day2.png"
+    },
+    {
+        "floor": 9,
+        "name": "Kaja",
+        "image": "kaja.png"
+    },
+    {
+        "floor": 10,
+        "name": "Miff",
+        "image": "miff1.png"
+    },
+    {
+        "floor": 11,
+        "name": "Jolteon",
+        "image": "jolty.png"
+    },
+    {
+        "floor": 12,
+        "name": "Shibbe",
+        "image": "day2.png"
+    },
+    {
+        "floor": 13,
+        "name": "Kaja",
+        "image": "kaja.png"
+    },
+    {
+        "floor": 14,
+        "name": "Miff",
+        "image": "miff1.png"
+    },
+    {
+        "floor": 15,
+        "name": "Jolteon",
+        "image": "jolty.png"
+    },
+    {
+        "floor": 16,
+        "name": "Shibbe",
+        "image": "day2.png"
+    },
+    {
+        "floor": 17,
+        "name": "Kaja",
+        "image": "kaja.png"
+    },
+    {
+        "floor": 18,
+        "name": "Miff",
+        "image": "miff1.png"
+    },
+    {
+        "floor": 19,
+        "name": "Jolteon",
+        "image": "jolty.png"
+    },
+    {
+        "floor": 20,
+        "name": "Shibbe",
+        "image": "day2.png"
+    },
+    {
+        "floor": 21,
+        "name": "Kaja",
+        "image": "kaja.png"
+    },
+    {
+        "floor": 22,
+        "name": "Miff",
+        "image": "miff1.png"
+    },
+    {
+        "floor": 23,
+        "name": "Jolteon",
+        "image": "jolty.png"
+    },
+    {
+        "floor": 24,
+        "name": "Shibbe",
+        "image": "day2.png"
     }
 ]

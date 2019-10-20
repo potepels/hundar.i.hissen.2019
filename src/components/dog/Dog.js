@@ -6,7 +6,7 @@ class Dog extends Component {
 
         return (
             <div className="c_dog">
-                BISJE
+                <h2>Hei, eg er {this.props.name}</h2>
             </div>
         );
     }
