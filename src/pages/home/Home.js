@@ -11,6 +11,8 @@ export default class Home extends React.Component {
         return (
             <div className="wrapper">
                 <Header />
+                <div className="c_home">                    
+                    <Hiss />
                 <FancyLightChain
                     name='chain-1'
                     direction='horizontal'
@@ -43,10 +45,6 @@ export default class Home extends React.Component {
                         ]
                     }
                 />
-                <div className="c_home">
-                    <h2>INGEN JUL UTEN KALENDER</h2>
-                    <p>Men beklager at det er en ræv idé</p>
-                    <Hiss />
                 </div>
             </div>
         );

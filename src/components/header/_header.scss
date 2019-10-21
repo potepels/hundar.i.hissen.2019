@@ -1,9 +1,40 @@
 @import "../../utils/_variables.scss";
 @import "../../utils/_mixins.scss";
 
-.c_header {
-  border: 1px solid $blue;
+.c_header {  
   &__inner {
+    padding: 1em 0;
     @include centerContent();
+        
+  }
+  &__logo {
+    text-decoration: none;
+    color: $pink;
+    h1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: $grafitti;
+      font-size: 3em;
+      font-weight: normal;
+      @media (min-width: $break--med) {
+        font-size: 4em;
+      }
+    }
+    img {
+      display: inline-block;
+      margin: 0 0.3em;
+      width: 1.5em;
+      transition: transform 150ms ease-in-out;
+      transform: scale(1);
+      @media (min-width: $break--med) {
+        width: 2em;
+      }
+    }
+    @include hover() {
+      img {
+        transform: scale(1.1);
+      }
+    }
   }
 }

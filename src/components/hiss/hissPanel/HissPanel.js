@@ -5,30 +5,29 @@ import './_hissPanel.scss';
 class HissPanel extends Component {
 
     render() {
-        const floors = [];
-
+        // let reversedDogData = this.props.DogData.reverse();
+        console.log(this.props.DogData);
         let buttons = this.props.DogData.map((floor, index) => {
-            if (index < this.props.openFloors) {
+            if (floor.floor <= this.props.openFloors) {
                 return (
-                    <Link to={`/${index}`} className="c_hiss-panel__button c_hiss-panel__button--active" key={index}>
-                        <span>{index + 1}</span>
+                    <Link to={`#${floor.floor}`} className="c_hiss-panel__button c_hiss-panel__button--active" key={`hissPanelButton-${index}`}>
+                        <span>{floor.floor}</span>
                     </Link>
                 )
             }
             return (
                 <span
-                    key={index}
+                    key={`hissPanelButton-${index}`}
                     className="c_hiss-panel__button c_hiss-panel__button--hidden">
-                    <span>{index + 1}</span>
+                    <span>{floor.floor}</span>
                 </span>
             )
-
         })
 
 
         return (
             <div className="c_hiss-panel">
-                <h3>Velg etasje</h3>
+                <h3>Velg etasje{this.props.openFloors}</h3>
                 <nav role="navigation">
                     {buttons}
                 </nav>

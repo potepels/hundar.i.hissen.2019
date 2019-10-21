@@ -1,88 +1,33 @@
 [
     {
-        "floor": 1,
+        "floor": 24,
         "name": "Kaja",
         "image": "kaja.png"
     },
     {
-        "floor": 2,
+        "floor": 23,
+        "name": "Shibbe",
+        "image": "day2.jpg"
+    },
+    {
+        "floor": 22,
+        "name": "Kaja",
+        "image": "kaja.png"
+    },
+    {
+        "floor": 21,
         "name": "Miff",
         "image": "miff1.png"
     },
     {
-        "floor": 3,
+        "floor": 20,
         "name": "Jolteon",
         "image": "jolty.png"
     },
     {
-        "floor": 4,
+        "floor": 19,
         "name": "Shibbe",
-        "image": "day2.png"
-    },
-    {
-        "floor": 5,
-        "name": "Kaja",
-        "image": "kaja.png"
-    },
-    {
-        "floor": 6,
-        "name": "Miff",
-        "image": "miff1.png"
-    },
-    {
-        "floor": 7,
-        "name": "Jolteon",
-        "image": "jolty.png"
-    },
-    {
-        "floor": 8,
-        "name": "Shibbe",
-        "image": "day2.png"
-    },
-    {
-        "floor": 9,
-        "name": "Kaja",
-        "image": "kaja.png"
-    },
-    {
-        "floor": 10,
-        "name": "Miff",
-        "image": "miff1.png"
-    },
-    {
-        "floor": 11,
-        "name": "Jolteon",
-        "image": "jolty.png"
-    },
-    {
-        "floor": 12,
-        "name": "Shibbe",
-        "image": "day2.png"
-    },
-    {
-        "floor": 13,
-        "name": "Kaja",
-        "image": "kaja.png"
-    },
-    {
-        "floor": 14,
-        "name": "Miff",
-        "image": "miff1.png"
-    },
-    {
-        "floor": 15,
-        "name": "Jolteon",
-        "image": "jolty.png"
-    },
-    {
-        "floor": 16,
-        "name": "Shibbe",
-        "image": "day2.png"
-    },
-    {
-        "floor": 17,
-        "name": "Kaja",
-        "image": "kaja.png"
+        "image": "day2.jpg"
     },
     {
         "floor": 18,
@@ -90,33 +35,88 @@
         "image": "miff1.png"
     },
     {
-        "floor": 19,
+        "floor": 17,
         "name": "Jolteon",
         "image": "jolty.png"
     },
     {
-        "floor": 20,
-        "name": "Shibbe",
-        "image": "day2.png"
-    },
-    {
-        "floor": 21,
+        "floor": 16,
         "name": "Kaja",
         "image": "kaja.png"
     },
     {
-        "floor": 22,
+        "floor": 15,
         "name": "Miff",
         "image": "miff1.png"
     },
     {
-        "floor": 23,
+        "floor": 14,
         "name": "Jolteon",
         "image": "jolty.png"
     },
     {
-        "floor": 24,
+        "floor": 13,
         "name": "Shibbe",
-        "image": "day2.png"
+        "image": "day2.jpg"
+    },
+    {
+        "floor": 12,
+        "name": "Kaja",
+        "image": "kaja.png"
+    },
+    {
+        "floor": 11,
+        "name": "Miff",
+        "image": "miff1.png"
+    },
+    {
+        "floor": 10,
+        "name": "Jolteon",
+        "image": "jolty.png"
+    },
+    {
+        "floor": 9,
+        "name": "Shibbe",
+        "image": "day2.jpg"
+    },
+    {
+        "floor": 8,
+        "name": "Kaja",
+        "image": "kaja.png"
+    },
+    {
+        "floor": 7,
+        "name": "Miff",
+        "image": "miff1.png"
+    },
+    {
+        "floor": 6,
+        "name": "Jolteon",
+        "image": "jolty.png"
+    },
+    {
+        "floor": 5,
+        "name": "Shibbe",
+        "image": "day2.jpg"
+    },
+    {
+        "floor": 4,
+        "name": "Kaja",
+        "image": "kaja.png"
+    },
+    {
+        "floor": 3,
+        "name": "Miff",
+        "image": "miff1.png"
+    },
+    {
+        "floor": 2,
+        "name": "Jolteon",
+        "image": "jolty.png"
+    },
+    {
+        "floor": 1,
+        "name": "Shibbe",
+        "image": "day2.jpg"
     }
 ]

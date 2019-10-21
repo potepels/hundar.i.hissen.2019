@@ -1,5 +1,5 @@
-@import "../../utils/_variables.scss";
-@import "../../utils/_mixins.scss";
+@import "../../../utils/_variables.scss";
+@import "../../../utils/_mixins.scss";
 
 .c_hiss-panel {
   border: 2px solid purple;
@@ -11,25 +11,27 @@
   z-index: 10;
   &__button {
     display: block;
-    margin-bottom: 1em;
-    width: 25%;
+    margin-bottom: 1.5em;
+    width: 50%;
     text-align: center;
     text-decoration: none;
     span {
       display: block;
       width: calc(100% - 0.4em);
       margin: 0 auto;
-      width: 1.5em;
-      height: 1.5em;
-      line-height: 1.5em;
+      width: 2em;
+      height: 2em;
+      line-height: 2em;
       color: $darkblue;
       font-weight: bold;
+      font-size: 1.2em;
       border-radius: 50%;
-      background: #eee;
+      background-color: rgba($blue, 0.4);
     }
     &--active {
       span {
         box-shadow: 0 0 0.4em 0.3em rgba($blue, 0.55);
+        background-color: #eee;
       }
     }
   }
@@ -37,5 +39,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    flex-direction: row-reverse;
   }
 }

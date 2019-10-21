@@ -3,3 +3,11 @@
   max-width: 1200px;
   width: 90%;
 }
+
+@mixin hover() {
+	@media (min-width: $break--med) {
+		&:hover {
+			@content;
+		}
+	}
+}
