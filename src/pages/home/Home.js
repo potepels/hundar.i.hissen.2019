@@ -13,38 +13,38 @@ export default class Home extends React.Component {
                 <Header />
                 <div className="c_home">                    
                     <Hiss />
-                <FancyLightChain
-                    name='chain-1'
-                    direction='horizontal'
-                    lights={
-                        [
-                            {
-                                "color": "blue",
-                                "blinking": false
-                            },
-                            {
-                                "color": "pink",
-                                "blinking": true
-                            },
-                            {
-                                "color": "green",
-                                "blinking": false
-                            },
-                            {
-                                "color": "blue",
-                                "blinking": false
-                            },
-                            {
-                                "color": "red",
-                                "blinking": true
-                            },
-                            {
-                                "color": "green",
-                                "blinking": true
-                            }
-                        ]
-                    }
-                />
+                    <FancyLightChain
+                        name='chain-1'
+                        direction='horizontal'
+                        lights={
+                            [
+                                {
+                                    "color": "blue",
+                                    "blinking": false
+                                },
+                                {
+                                    "color": "pink",
+                                    "blinking": true
+                                },
+                                {
+                                    "color": "green",
+                                    "blinking": false
+                                },
+                                {
+                                    "color": "blue",
+                                    "blinking": false
+                                },
+                                {
+                                    "color": "red",
+                                    "blinking": true
+                                },
+                                {
+                                    "color": "green",
+                                    "blinking": true
+                                }
+                            ]
+                        }
+                    />
                 </div>
             </div>
         );

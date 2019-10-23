@@ -14,7 +14,7 @@ class Dog extends Component {
 
         return (
             <div className="c_dog">
-                <img src={dogImage} alt="Bilde av hund"/>
+                <img src={dogImage} alt="Bilde av hund"/> HUND JEG ER HER
             </div>
         );
     }

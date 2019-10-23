@@ -31,13 +31,15 @@ class Hiss extends Component {
 
     setHissStatus() {
         const startDate = new Date(2019, 9, 1);
-        const endDate = new Date(2019, 9, 23);
-
+        const endDate = new Date(2019, 9, 24);
+        console.log(endDate);
         if (this.todaysDate < startDate) {
             this.setState({ status: 'early' });
-        } else if (this.todaysDate > endDate) {
-            this.setState({ status: 'closed' });
-        } else {
+        } 
+        // else if (this.todaysDate > endDate) {
+        //     this.setState({ status: 'closed' });
+        // }
+         else {
             this.setState({ status: 'open' });
             this.getDogs(this.todaysDate);
         }
@@ -76,6 +78,7 @@ class Hiss extends Component {
                     DogData={DogData}
                 /> 
                 <div className="c_hiss__room">
+                LOL {this.state.status}
                     {this.state.status === 'open' && (
                         visibleDogs
                     )}
