@@ -1,11 +1,14 @@
 @import "../../utils/_variables.scss";
 @import "../../utils/_mixins.scss";
 
-.c_header {  
+.c_header {
+  height: 6em;
+  @media (min-width: $break--med) {
+    height: 7em;
+  }
   &__inner {
     padding: 1em 0;
     @include centerContent();
-        
   }
   &__logo {
     text-decoration: none;
@@ -18,7 +21,7 @@
       font-size: 3em;
       font-weight: normal;
       @media (min-width: $break--med) {
-        font-size: 4em;
+        font-size: 4.5em;
       }
     }
     img {

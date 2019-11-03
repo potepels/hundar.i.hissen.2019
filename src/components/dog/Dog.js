@@ -8,13 +8,13 @@ class Dog extends Component {
         this.dogImages = require.context('../../assets/images/dogs', true);
     }
 
-    
+
     render() {
         let dogImage = this.dogImages(`./${this.props.image}`);
 
         return (
-            <div className="c_dog">
-                <img src={dogImage} alt="Bilde av hund"/> HUND JEG ER HER
+            <div className={`c_dog c_dog--${this.props.extraClass}`}>
+                <img src={dogImage} alt="Bilde av hund" />
             </div>
         );
     }

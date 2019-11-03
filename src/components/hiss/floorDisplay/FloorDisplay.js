@@ -5,12 +5,9 @@ import './_floorDisplay.scss';
 class FloorDisplay extends Component {
 
     render() {
-       
-
-
         return (
             <div className="c_floor-display">
-                <span>23</span>
+                <span>{this.props.todaysDayNumber}jj</span>
             </div>
         );
     }

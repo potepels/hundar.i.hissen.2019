@@ -1,4 +1,5 @@
 @import "./variables.scss";
+@import "./mixins.scss";
 
 * {
   margin: 0;
@@ -7,9 +8,13 @@
 }
 
 body {
-  background: darken($darkblue, 10%);
+  // background: darken($darkblue, 10%);
+  // @include zigzag($greyblue, $greyblue2);
+  @include zigzag($violet, $violet2);
+  // @include zigzag($pink, $pink2);
+  // @include zigzag($grape, $grape2);
   color: #fff;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 html {
   font-size: 16px;

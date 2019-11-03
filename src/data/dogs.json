@@ -2,22 +2,29 @@
     {
         "floor": 24,
         "name": "Kaja",
-        "image": "kaja.png"
+        "image": "kaja.png",
+        "extraClass": "apprapp",
+        "level": 1
     },
     {
         "floor": 23,
         "name": "Shibbe",
-        "image": "day2.jpg"
+        "image": "grow.png",
+        "extraClass": "bingping",
+        "level": 2
     },
     {
         "floor": 22,
         "name": "Kaja",
-        "image": "kaja.png"
+        "image": "miff1.png",
+        "extraClass": "clapclap",
+        "level": 3
     },
     {
         "floor": 21,
         "name": "Miff",
-        "image": "miff1.png"
+        "image": "miff1.png",
+        "extraClass": "dingdong"
     },
     {
         "floor": 20,

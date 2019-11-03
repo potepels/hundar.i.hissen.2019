@@ -1,44 +1,6 @@
 @import "../../../utils/_variables.scss";
 @import "../../../utils/_mixins.scss";
 
-.c_hiss-panel {
-  border: 2px solid purple;
-  position: fixed;
-  top: 5em;
-  right: 5em;
-  width: 10em;
-  background: $darkblue;
-  z-index: 10;
-  &__button {
-    display: block;
-    margin-bottom: 1.5em;
-    width: 50%;
-    text-align: center;
-    text-decoration: none;
-    span {
-      display: block;
-      width: calc(100% - 0.4em);
-      margin: 0 auto;
-      width: 2em;
-      height: 2em;
-      line-height: 2em;
-      color: $darkblue;
-      font-weight: bold;
-      font-size: 1.2em;
-      border-radius: 50%;
-      background-color: rgba($blue, 0.4);
-    }
-    &--active {
-      span {
-        box-shadow: 0 0 0.4em 0.3em rgba($blue, 0.55);
-        background-color: #eee;
-      }
-    }
-  }
-  nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    flex-direction: row-reverse;
-  }
+.c_floor-display {
+  border: 1px solid blue;
 }

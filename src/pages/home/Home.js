@@ -11,9 +11,10 @@ export default class Home extends React.Component {
         return (
             <div className="wrapper">
                 <Header />
-                <div className="c_home">                    
+                <div className="p_home">
+                    <div className="p_home__floor" aria-hidden />
                     <Hiss />
-                    <FancyLightChain
+                    {/* <FancyLightChain
                         name='chain-1'
                         direction='horizontal'
                         lights={
@@ -44,7 +45,7 @@ export default class Home extends React.Component {
                                 }
                             ]
                         }
-                    />
+                    /> */}
                 </div>
             </div>
         );
