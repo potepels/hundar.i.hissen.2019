@@ -10,9 +10,16 @@ class HissPanel extends Component {
         let buttons = this.props.DogData.map((floor, index) => {
             if (floor.floor <= this.props.openFloors) {
                 return (
-                    <Link to={`#${floor.floor}`} className="c_hiss-panel__button c_hiss-panel__button--active" key={`hissPanelButton-${index}`}>
+                    <button 
+                        className="c_hiss-panel__button c_panel__button--active"
+                        key={`hissPanelButton-${index}`}
+                        onClick={this.props.moveToAnotherFloor}
+                    >
                         <span>{floor.floor}</span>
-                    </Link>
+                    </button>
+                    // <Link to={`#${floor.floor}`} className="c_hiss-panel__button c_hiss-panel__button--active" key={`hissPanelButton-${index}`}>
+                    //     <span>{floor.floor}</span>
+                    // </Link>
                 )
             }
             return (

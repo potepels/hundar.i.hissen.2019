@@ -16,6 +16,9 @@
     right: 0;
     height: 10vh;
     background: $greyblue;
+    @media (min-width: $break--big) {
+      height: 15vh;
+    }
     // @include dots($greyblue, $greyblue2);
     &:before {
       position: absolute;

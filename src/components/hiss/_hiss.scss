@@ -98,6 +98,9 @@
       width: 40em;
       height: 40em;
     }
+    @media (min-width: $break--big) {
+      bottom: calc(15vh - 0.5em);
+    }
     &__outside {
       @media (min-width: $break--med) {
       }

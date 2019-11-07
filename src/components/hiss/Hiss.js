@@ -14,15 +14,21 @@ class Hiss extends Component {
             status: 'closed',
             hissenDogs: [],
             doorsOpen: false,
-            displayDay: 1
+            displayDay: 1,
+            floorNow: 1
         }
         this.todaysDate = new Date();
         this.todaysDayNumber = this.todaysDate.getDate();
         this.toggleHissDoors = this.toggleHissDoors.bind(this);
+        this.moveToAnotherFloor = this.moveToAnotherFloor.bind(this);
     }
 
     componentDidMount() {
         this.setHissStatus();
+    }
+
+    moveToAnotherFloor(hepp) {
+        console.log(hepp);
     }
 
     toggleHissDoors() {
@@ -48,7 +54,7 @@ class Hiss extends Component {
         //     this.setState({ status: 'closed' });
         // }
         else {
-            this.setState({ status: 'open' });
+            this.setState({ status: 'open', floorNow: this.todaysDayNumber });
             this.getDogs(this.todaysDate);
         }
         return this.state.status;
@@ -72,11 +78,14 @@ class Hiss extends Component {
                 <FloorDisplay
                     todaysDayNumber={this.todaysDayNumber}
                 />
-                {/* <HissPanel
-                    floorsInTotal={DogData.length}
-                    openFloors={this.todaysDayNumber}
-                    DogData={DogData}
-                /> */}
+                {this.state.status === 'open' && (
+                    <HissPanel
+                        floorsInTotal={DogData.length}
+                        openFloors={this.todaysDayNumber}
+                        DogData={DogData}
+                        moveToAnotherFloor = {this.moveToAnotherFloor}
+                    />
+                )}              
                 <div className="c_hiss__room">
                     <div className="c_hiss__room__outside c_hiss__room__outside--top" />
                     <div className="c_hiss__room__outside c_hiss__room__outside--left" />
