@@ -6,6 +6,7 @@
   position: relative;
   min-height: calc(100vh - 6em);
   border: 1px solid red;
+  background: $grape;
   @media (min-width: $break--med) {
     min-height: calc(100vh - 7em);
   }
@@ -29,5 +30,79 @@
       background-color: $white;
       content: "";
     }
+  }
+  &--xiapia {
+    @include zigzag($grape, $grape2);
+  }
+  &--wasapasa {
+    @include argyle($grape);
+  }
+  &--vipselipse {
+    @include zigzag($greyblue, $greyblue2);
+  }
+  &--umaupa {
+    @include argyle($snow2);
+  }
+  &--tripptrapp {
+    @include water($pink, $pink2);
+  }
+  &--sukkdukk {
+    
+  }
+  &--rettsmett {
+
+  }
+  &--qimi {
+    @include argyle($violet);
+  }
+  &--popkopp {
+
+  }
+  &--opalopa {
+
+  }
+  &--nixmix {
+
+  }
+  &--mixmax {
+    @include zigzag($pink, $pink2);
+
+  }
+  &--lappsnapp {
+
+  }
+  &--knapprapp {
+
+  }
+  &--jappsnapp {
+
+  }
+  &--ipplipp {
+
+  }
+  &--hingping {
+
+  }
+  &--gnafflaff {
+
+  }
+  &--flippflopp {
+
+  }
+  &--epilepi {
+
+  }
+  &--dingdong {
+
+  }
+  &--clapclap {
+
+  }
+  &--bingping {
+
+  }
+  &--apprapp {  
+    @include zigzag($violet, $violet2);
+
   }
 }

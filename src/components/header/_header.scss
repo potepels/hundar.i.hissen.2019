@@ -2,9 +2,9 @@
 @import "../../utils/_mixins.scss";
 
 .c_header {
-  height: 6em;
+  height: 7em;
   @media (min-width: $break--med) {
-    height: 7em;
+    height: 8em;
   }
   &__inner {
     padding: 1em 0;
@@ -21,8 +21,12 @@
       font-size: 3em;
       font-weight: normal;
       @media (min-width: $break--med) {
-        font-size: 4.5em;
+        font-size: 4em;
       }
+    }
+    h2 {
+      font-size: 1.2em;
+      text-align: center;
     }
     img {
       display: inline-block;
@@ -31,7 +35,7 @@
       transition: transform 150ms ease-in-out;
       transform: scale(1);
       @media (min-width: $break--med) {
-        width: 2em;
+        width: 1.7em;
       }
     }
     @include hover() {

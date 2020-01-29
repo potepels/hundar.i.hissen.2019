@@ -11,6 +11,43 @@
     }
   }
 }
+
+@mixin water($color1, $color2) {
+  background: radial-gradient(1.5em 6.28571em at 1.95em, 
+            rgba(255, 255, 255, 0) 50%, 
+            rgba(255, 255, 255, 0.25) 50%, 
+            rgba(255, 255, 255, 0.25) 55%, 
+            rgba(255, 255, 255, 0) 55%) 0 0, 
+            radial-gradient(1.5em 6.28571em at -0.45em,
+            rgba(255, 255, 255, 0) 50%, 
+            rgba(255, 255, 255, 0.25) 50%, 
+            rgba(255, 255, 255, 0.25) 55%, 
+            rgba(255, 255, 255, 0) 55%) 1.5em 5.5em, 
+            radial-gradient(2.3em 4.57143em at 2.99em, rgba(255, 255, 255, 0) 50%, 
+            rgba(255, 255, 255, 0.3) 50%, 
+            rgba(255, 255, 255, 0.3) 55%, 
+            rgba(255, 255, 255, 0) 55%) 0 0,
+            radial-gradient(2.3em 4.57143em at -0.69em, 
+            rgba(255, 255, 255, 0) 50%, 
+            rgba(255, 255, 255, 0.3) 50%, 
+            rgba(255, 255, 255, 0.3) 55%, 
+            rgba(255, 255, 255, 0) 55%) 2.3em 4em, 
+            radial-gradient(3.5em 6.28571em at 4.55em, 
+            rgba(255, 255, 255, 0) 50%, 
+            rgba(255, 255, 255, 0.25) 50%,
+            rgba(255, 255, 255, 0.25) 55%, 
+            rgba(255, 255, 255, 0) 55%) 0 0, 
+            radial-gradient(3.5em 6.28571em at -1.05em, 
+            rgba(255, 255, 255, 0) 50%, 
+            rgba(255, 255, 255, 0.25) 50%, 
+            rgba(255, 255, 255, 0.25) 55%, 
+            rgba(255, 255, 255, 0) 55%) 3.5em 5.5em, 
+            radial-gradient($color2, darken($color1, 15%));
+  background-color: $color1;
+  background-size: 1.5em 11em, 1.5em 11em, 2.3em 8em, 2.3em 8em, 3.5em 11em, 3.5em 11em, 100% 100%;
+  background-repeat: repeat;
+}
+
 @mixin zigzag($color1, $color2) {
   background: linear-gradient(135deg, $color1 25%, rgba(0, 0, 0, 0) 25.1%),
     linear-gradient(225deg, $color1 25%, rgba(0, 0, 0, 0) 25.1%),
@@ -18,6 +55,16 @@
     linear-gradient(45deg, $color1 25%, rgba(0, 0, 0, 0) 25.1%), $color2;
   background-size: 40px 40px;
   background-position: -20px 0, -20px 0, 0 0, 0 0;
+}
+
+@mixin argyle($color) {
+  background-color: $color;
+  background-image:
+  repeating-linear-gradient(120deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+  repeating-linear-gradient(60deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+  linear-gradient(60deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1)),
+  linear-gradient(120deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1));
+  background-size: 70px 120px;
 }
 
 @mixin dots($color1, $color2) {

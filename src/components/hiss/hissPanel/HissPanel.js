@@ -1,25 +1,31 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import FloorChanger from '../../../state/FloorChanger';
 import './_hissPanel.scss';
 
 class HissPanel extends Component {
 
+    state = {
+        arry: this.props.DogData,
+        changeFloor: this.changeFloor
+    }
+
+    componentDidMount() {
+        this.setState({
+            arry: this.state.arry.reverse()
+        });
+    }
+
+    changeFloor = (newFloorNumber, extraClass) => {
+        this.props.moveToAnotherFloor(newFloorNumber, extraClass);
+    }
     render() {
-        // let reversedDogData = this.props.DogData.reverse();
-        console.log(this.props.DogData);
-        let buttons = this.props.DogData.map((floor, index) => {
+        let buttons = this.state.arry.map((floor, index) => {
             if (floor.floor <= this.props.openFloors) {
                 return (
-                    <button 
-                        className="c_hiss-panel__button c_panel__button--active"
-                        key={`hissPanelButton-${index}`}
-                        onClick={this.props.moveToAnotherFloor}
-                    >
-                        <span>{floor.floor}</span>
-                    </button>
-                    // <Link to={`#${floor.floor}`} className="c_hiss-panel__button c_hiss-panel__button--active" key={`hissPanelButton-${index}`}>
-                    //     <span>{floor.floor}</span>
-                    // </Link>
+                    <FloorChanger
+                        buttonFloor = {floor.floor}
+                        index = {index}
+                    />
                 )
             }
             return (
@@ -34,6 +40,7 @@ class HissPanel extends Component {
 
         return (
             <div className="c_hiss-panel">
+                PANEL
                 <h3>Velg etasje{this.props.openFloors}</h3>
                 <nav role="navigation">
                     {buttons}

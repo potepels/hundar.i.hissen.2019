@@ -14,6 +14,7 @@ class Header extends Component {
                             <img src={Logo} alt="Momo og Sana-logo" />
                             Sana
                         </h1>
+                        <h2>Hur många hundar i hissen?</h2>
                     </Link>
                 </div>
             </header>

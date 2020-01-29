@@ -4,7 +4,8 @@ import Dog from '../../components/dog/Dog';
 import HissPanel from './hissPanel/HissPanel';
 import FloorDisplay from './floorDisplay/FloorDisplay';
 import DogData from '../../data/dogs.json';
-import { ReactComponent as Inside } from '../../assets/images/site/hiss.inside.svg';
+import CurrentFloor from '../../state/CurrentFloor';
+// import { ReactComponent as Inside } from '../../assets/images/site/hiss.inside.svg';
 
 class Hiss extends Component {
     constructor(props) {
@@ -13,9 +14,9 @@ class Hiss extends Component {
             navOpen: false,
             status: 'closed',
             hissenDogs: [],
-            doorsOpen: false,
+            doorsOpen: true,
             displayDay: 1,
-            floorNow: 1
+            currentFloor: 1
         }
         this.todaysDate = new Date();
         this.todaysDayNumber = this.todaysDate.getDate();
@@ -27,18 +28,26 @@ class Hiss extends Component {
         this.setHissStatus();
     }
 
-    moveToAnotherFloor(hepp) {
-        console.log(hepp);
+    // Sendes til HissPanel for å bytte etasje på panelet
+    moveToAnotherFloor(newFloor, hepp) {
+        this.setState({
+            currentFloor: newFloor
+        })
+        console.log(this.state.currentFloor);
+        // this.props.getCurrentFloor(hepp);
     }
 
+    // Åpner/lukker dørene
     toggleHissDoors() {
         this.setState({
             doorsOpen: !this.state.doorsOpen
         });
     }
 
+    // Hender riktig antall hunder for dagen
     getDogs() {
-        const openDogs = DogData.slice(0, this.todaysDayNumber);
+        const openDogs = DogData.reverse().slice(0, this.todaysDayNumber);
+        // openDogs.reverse();
         this.setState({ hissenDogs: openDogs });
         return this.state.hissenDogs;
     }
@@ -72,11 +81,18 @@ class Hiss extends Component {
         })
 
         return (
+            
             <div className="c_hiss">
+                {/* <CurrentFloor.Consumer>
+                    {value => (
+                        <h3>{value}</h3>
+                    )}
+                </CurrentFloor.Consumer> */}
                 <button onClick={this.toggleHissDoors}>Dører</button>
 
                 <FloorDisplay
                     todaysDayNumber={this.todaysDayNumber}
+                    currentFloor={this.state.currentFloor}
                 />
                 {this.state.status === 'open' && (
                     <HissPanel
@@ -105,7 +121,7 @@ class Hiss extends Component {
                         </div>
                     </div>
                     {this.state.status === 'open' && (
-                        <div class="c_hiss__dog-scene">
+                        <div className="c_hiss__dog-scene">
                             {visibleDogs}
                         </div>
                     )}

@@ -32,11 +32,15 @@
       border-radius: 50%;
       background-color: rgba($blue, 0.4);
     }
-    &--active {
-      span {
-        box-shadow: 0 0 0.4em 0.3em rgba($blue, 0.55);
-        background-color: #eee;
-      }
+    &:focus {
+      // outline: none;
+    }
+  }
+  .c_panel__button--active {
+    cursor: pointer;
+    span {
+      box-shadow: 0 0 0.4em 0.3em rgba($blue, 0.55);
+      background-color: #eee;
     }
   }
   nav {

@@ -1,129 +1,148 @@
 [
     {
         "floor": 24,
-        "name": "Kaja",
-        "image": "kaja.png",
-        "extraClass": "apprapp",
-        "level": 1
+        "name": "Kaja24",
+        "image": "day15.png",
+        "extraClass": "apprapp"
     },
     {
         "floor": 23,
-        "name": "Shibbe",
-        "image": "grow.png",
+        "name": "Shibbe23",
+        "image": "day23.png",
         "extraClass": "bingping",
         "level": 2
     },
     {
         "floor": 22,
-        "name": "Kaja",
-        "image": "miff1.png",
+        "name": "Kaja22",
+        "image": "day22.png",
         "extraClass": "clapclap",
         "level": 3
     },
     {
         "floor": 21,
-        "name": "Miff",
-        "image": "miff1.png",
+        "name": "Miff21",
+        "image": "day21.png",
         "extraClass": "dingdong"
     },
     {
         "floor": 20,
-        "name": "Jolteon",
-        "image": "jolty.png"
+        "name": "Jolteon20",
+        "image": "day20.png",
+        "extraClass": "epilepi"
     },
     {
         "floor": 19,
-        "name": "Shibbe",
-        "image": "day2.jpg"
+        "name": "Shibbe19",
+        "image": "day19.png",
+        "extraClass": "flippflopp"
     },
     {
         "floor": 18,
-        "name": "Miff",
-        "image": "miff1.png"
+        "name": "Miff18",
+        "image": "day18.png",
+        "extraClass": "gnafflaff"
     },
     {
         "floor": 17,
-        "name": "Jolteon",
-        "image": "jolty.png"
+        "name": "Jolteon17",
+        "image": "day17.png",
+        "extraClass": "hingping"
     },
     {
         "floor": 16,
-        "name": "Kaja",
-        "image": "kaja.png"
+        "name": "Kaja16",
+        "image": "day16.png",
+        "extraClass": "ipplipp"
     },
     {
         "floor": 15,
-        "name": "Miff",
-        "image": "miff1.png"
+        "name": "Miff15",
+        "image": "day15.png",
+        "extraClass": "jappsnapp"
     },
     {
         "floor": 14,
-        "name": "Jolteon",
-        "image": "jolty.png"
+        "name": "Jolteon14",
+        "image": "day14.png",
+        "extraClass": "knapprapp"
     },
     {
         "floor": 13,
-        "name": "Shibbe",
-        "image": "day2.jpg"
+        "name": "Shibbe13",
+        "image": "day13.png",
+        "extraClass": "lappsnapp"
     },
     {
         "floor": 12,
-        "name": "Kaja",
-        "image": "kaja.png"
+        "name": "Kaja12",
+        "image": "day12.png",
+        "extraClass": "mixmax"
     },
     {
         "floor": 11,
-        "name": "Miff",
-        "image": "miff1.png"
+        "name": "Miff11",
+        "image": "day11.png",
+        "extraClass": "nixmix"
     },
     {
         "floor": 10,
-        "name": "Jolteon",
-        "image": "jolty.png"
+        "name": "Jolteon10",
+        "image": "day10.png",
+        "extraClass": "opalopa"
     },
     {
         "floor": 9,
-        "name": "Shibbe",
-        "image": "day2.jpg"
+        "name": "Shibbe9",
+        "image": "day9.png",
+        "extraClass": "popkopp"
     },
     {
         "floor": 8,
-        "name": "Kaja",
-        "image": "kaja.png"
+        "name": "Kaja8",
+        "image": "day8.png",
+        "extraClass": "qimi"
     },
     {
         "floor": 7,
-        "name": "Miff",
-        "image": "miff1.png"
+        "name": "Miff7",
+        "image": "day7.png",
+        "extraClass": "rettsmett"
     },
     {
         "floor": 6,
-        "name": "Jolteon",
-        "image": "jolty.png"
+        "name": "Jolteon6",
+        "image": "day6.png",
+        "extraClass": "sukkdukk"
     },
     {
         "floor": 5,
-        "name": "Shibbe",
-        "image": "day2.jpg"
+        "name": "Shibbe5",
+        "image": "day5.png",
+        "extraClass": "tripptrapp"
     },
     {
         "floor": 4,
-        "name": "Kaja",
-        "image": "kaja.png"
+        "name": "Kaja4",
+        "image": "day4.png",
+        "extraClass": "umaupa"
     },
     {
         "floor": 3,
-        "name": "Miff",
-        "image": "miff1.png"
+        "name": "Miff3",
+        "image": "day3.png",
+        "extraClass": "vipselipse"
     },
     {
         "floor": 2,
-        "name": "Jolteon",
-        "image": "jolty.png"
+        "name": "Jolteon2",
+        "image": "day2.png",
+        "extraClass": "wasapasa"
     },
     {
         "floor": 1,
-        "name": "Shibbe",
-        "image": "day2.jpg"
+        "name": "Shibbe1",
+        "image": "day1.png",
+        "extraClass": "xiapia"
     }
 ]
